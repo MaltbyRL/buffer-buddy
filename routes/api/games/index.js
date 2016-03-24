@@ -14,19 +14,9 @@ router.get('/git-games', (req, res, next) => {
     if (err) {
       return next(err);
     }
-
-
-
-    games.map(function(game, i) {
-      console.log("game: ", game)
-    })
     res.json({ games: games });
   });
 });
 
-//POST /api/top-movies
-router.post('/', (req, res, next) => {
-  res.json({ hello: 'world'});
-});
 
 module.exports = router;

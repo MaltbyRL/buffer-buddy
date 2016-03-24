@@ -16,6 +16,7 @@
     "gulp-clean-css": "^2.0.3",
     "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.2.0",
+    "mongoose": "^4.4.10",
     "rimraf": "^2.5.2"
   }
 }

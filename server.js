@@ -1,10 +1,12 @@
 'use strict';
-var express = require('express');
-var api = require('./routes/api');
-var path = require("path");
+const express = require('express');
+const api = require('./routes/api');
+const path = require("path");
 
-var app = express();
+const app = express();
 
+const mongoose = require("mongoose");
+mongoose.connect('')
 
 app.set("views", path.join(__dirname, "public"));
 app.set("view engine", "ejs");

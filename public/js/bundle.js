@@ -48,13 +48,18 @@ app.controller('homeCtrl', function($scope, $sce, $http) {
 
   }
 
-  // $scope.updateGameList = () => {
+  $scope.updateGameList = () => {
     $http.get("api/git-games/git-games").then((res) => {
       console.log(res.data.games)
       $scope.games = res.data.games
+      // $scope.updateDataBase($scope.games);
     });
-  // }
 
+  }
+
+  $scope.updateDataBase = (data) => {
+    // $http.put("api/")
+  }
 
 
 
