@@ -1,0 +1,44 @@
+<div class="container">
+  <button id="myBtn" ng-click="modal = !modal">Open Modal</button>
+
+
+
+  <!-- Trigger/Open The Modal -->
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+
+
+      <span class="close"><br>Close</span>
+    <!--Game Window -->
+      <div id="gameWindow" ng-show="frame">
+        <span class="closeGame" ng-click="frame = !frame"><br>Close Game</span>
+        <iframe ng-src="{{getGameByUrl}}" frameborder="2"></iframe>
+      </div>
+    <!-- Browse Games -->
+      <div id="table" ng-show="!frame">
+        <button>Favorites</button> <button>Browse </button>
+        <table class="table table-hover">
+          <thead>
+
+          </thead>
+          <tbody>
+            <tr ng-repeat="game in games" ng-click="openIframe(game)">
+              <td>{{game.Name}}</td>
+              <td>{{game.Description}}</td>
+              <td>Play</td>
+              <td>GitRepo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+<link rel="stylesheet" type="text/css" href="css/home.css">
