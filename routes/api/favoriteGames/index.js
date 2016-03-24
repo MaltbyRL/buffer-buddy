@@ -2,24 +2,19 @@
 
 var express = require('express');
 
-var githubGames = require('../../../lib/scrapers/git-games')
+var favoritedGames = require('')
 
 var router = express.Router();
 
 
 
 // GET /api/top-movies
-router.get('/git-games', (req, res, next) => {
-  githubGames((err, games) => {
+router.get('/favorited-games', (req, res, next) => {
+  favoritedGames((err, games) => {
     if (err) {
       return next(err);
     }
 
-
-
-    games.map(function(game, i) {
-      console.log("game: ", game)
-    })
     res.json({ games: games });
   });
 });
