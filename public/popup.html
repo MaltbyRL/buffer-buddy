@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Buffer Bud</title>
+  <link rel="stylesheet" type="text/css" href="css/popup.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+</head>
+
+<body ng-app='bufferBud'>
+  <h1>Buffer v Bud</h1>
+  <button id="myBtn" ng-click="modal = !modal">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+
+
+      <span class="close"><br>Close</span>
+      <!--Game Window -->
+      <div id="gameWindow" ng-show="frame">
+        <span class="closeGame" ng-click="frame = !frame"><br>Close Game</span>
+        <iframe ng-src="{{getGameByUrl}}" frameborder="2"></iframe>
+      </div>
+
+      <!-- Games Tables -->
+      <div id="browsing-table" ng-show="!frame" ng-show="!favorites">
+        <button class="tableSelectButton" ui-sref="favorites">Favorites</button>
+        <button class="tableSelectButton" ui-sref="browse" >Browse </button>
+        <table class="table table-hover">
+          <ui-view></ui-view>
+
+
+      </div>
+    </div>
+
+
+
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>

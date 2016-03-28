@@ -10,5 +10,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "partials/gamePage.html",
       controller: "homeCtrl"
     })
+    .state("browse", {
+      url: "/browse",
+      templateUrl: "partials/gamePage.html",
+      controller: "browseCtrl"
+    })
+    .state("favorites", {
+      url: "/favorites",
+      templateUrl: "partials/favoritesTable.html",
+      controller: "favoritesCtrl"
+    })
   $urlRouterProvider.otherwise("/");
 });

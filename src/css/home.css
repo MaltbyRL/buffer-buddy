@@ -8,9 +8,13 @@
   font-size:20px;
 }
 
+.tableSelectButton {
+  margin: 25px
+}
 
 .closeGame {
   align-items: left;
+  margin: 25px
 }
 
 iframe{
@@ -33,14 +37,13 @@ table.table thead {
 
 
 table.table tbody {
-    height: 60vh;
+    height: 75vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 #myModal {
-  max-height: 95vh;
-  overflow: scroll;
+overflow: hidden;
 }
 
 
@@ -59,13 +62,3 @@ table.table tbody {
     animation-duration: 0.4s;
 
 }
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-@keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
