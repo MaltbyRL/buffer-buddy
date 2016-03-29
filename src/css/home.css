@@ -4,7 +4,6 @@
   padding: 2px 16px;
 }
 body {
-  font-family: Copperplate;
   font-size:20px;
 }
 
@@ -62,4 +61,5 @@ overflow: hidden;
 }
 .modal {
    background-image: url("./images/red-background.jpg");
+   font-family: Copperplate;
 }
