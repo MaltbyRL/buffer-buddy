@@ -33,14 +33,13 @@ app.controller('browseCtrl', function($scope, $sce, $http) {
 
   }
 
-  $scope.updateGameList = () => {
-    $http.get("api/git-games/git-games").then((res) => {
-      console.log(res.data.games)
-      $scope.games = res.data.games
-      // $scope.updateDataBase($scope.games);
-    });
-
-  }
+  // $scope.updateGameList = () => {
+  //   $http.get("../../buffer-bud-server/api/git-games/git-games").then((res) => {
+  //     console.log(res.data.games)
+  //     $scope.games = res.data.games
+  //     $scope.updateDataBase($scope.games);
+  //   });
+  // }
 
   $scope.updateDataBase = (data) => {
     // $http.put("api/")

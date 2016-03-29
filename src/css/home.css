@@ -3,7 +3,7 @@
 .modal-body {
   padding: 2px 16px;
 }
-.container {
+body {
   font-family: Copperplate;
   font-size:20px;
 }
@@ -25,7 +25,6 @@ iframe{
   width: 100%;
 }
 
-
 table.table tbody,
 table.table thead {
   padding-top: 15px;
@@ -35,17 +34,15 @@ table.table thead {
   display: block;
 }
 
-
 table.table tbody {
     height: 75vh;
     overflow-y: auto;
     overflow-x: hidden;
-}
+};
 
 #myModal {
 overflow: hidden;
-}
-
+};
 
 /* Modal Content */
 .modal-content {
@@ -61,4 +58,8 @@ overflow: hidden;
     animation-name: animatetop;
     animation-duration: 0.4s;
 
+
+}
+.modal {
+   background-image: url("./images/red-background.jpg");
 }

@@ -1,14 +1,16 @@
+<!--Game Window -->
+<div id="gameWindow" ng-show="frame">
+  <span class="closeGame" ng-click="frame = !frame"><br>Close Game</span>
+  <iframe ng-src="{{getGameByUrl}}" frameborder="2"></iframe>
+</div>
 <!-- favorited-games -->
 <div id="favorites-table" ng-show="!frame" ng-show="favorites">
-
   <table class="table table-hover">
-    <thead>
 
-    </thead>
     <tbody>
       <tr ng-repeat="game in favorites" ng-click="openIframe(game)">
-        <td>{{game.Name}}</td>
-        <td>{{game.Description}}</td>
+        <td>{{}}</td>
+        <td>{{}}</td>
         <td>Play</td>
         <td>GitRepo</td>
       </tr>

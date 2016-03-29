@@ -4,13 +4,49 @@
   "name": "Buffer Bud",
   "description": "This extension will let you play a game while waiting",
   "version": "1.0",
+  "default_locale": "en",
+  "browser_action": "popup",
+  "author": "Richard Maltby",
+
   "app": {
     "launch": {
       "local_path": "popup.html"
     }
   },
-
   "permissions": [
    "activeTab"
    ]
+   "background": {
+     "persistent": false
+   },
+   "chrome_ui_overrides": {
+     "bookmarks_ui": {
+       "remove_bookmark_shortcut": true,
+       "remove_button": true
+     }
+   },
+   "content_security_policy": "Not Resposible",
+   "file_system_provider_capabilities": {
+     "configurable": true,
+     "multiple_mounts": true,
+     "source": "network"
+   },
+   "homepage_url": "http://path/to/homepage",
+   "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
+   "incognito": "spanning or split",
+   "key": "publicKey",
+   "minimum_chrome_version": "versionString",
+   "offline_enabled": true,
+   "omnibox": {
+     "keyword": "aString"
+   },
+   "optional_permissions": ["tabs"],
+   "permissions": ["tabs"],
+   "short_name": "buffer-bud",
+   "storage": {
+     "managed_schema": "schema.json"
+   },
+   "update_url": "will connect to server",
+   "version_name": "aString",
+
 }

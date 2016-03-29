@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Buffer Bud</title>
   <link rel="stylesheet" type="text/css" href="css/popup.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -18,17 +19,13 @@
   <button id="myBtn" ng-click="modal = !modal">Open Modal</button>
 
   <!-- The Modal -->
-  <div id="myModal" class="modal">
+  <div id="myModal" class="modal" >
     <!-- Modal content -->
-    <div class="modal-content">
+    <div class="modal-content" style="background-image: http://7-themes.com/data_images/out/41/6910256-red-background.jpg; ">
 
 
       <span class="close"><br>Close</span>
-      <!--Game Window -->
-      <div id="gameWindow" ng-show="frame">
-        <span class="closeGame" ng-click="frame = !frame"><br>Close Game</span>
-        <iframe ng-src="{{getGameByUrl}}" frameborder="2"></iframe>
-      </div>
+
 
       <!-- Games Tables -->
       <div id="browsing-table" ng-show="!frame" ng-show="!favorites">
