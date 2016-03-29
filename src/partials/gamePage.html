@@ -1,3 +1,4 @@
+<!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
 <div class="container">
   <button id="myBtn" ng-click="modal = !modal">Open Modal</button>
 
@@ -12,7 +13,7 @@
     <div class="modal-content">
 
 
-      <span class="close"><br>Close</span>
+      <button class="x-btn close btn btn-default">Close</button>
     <!--Game Window -->
       <div id="gameWindow" ng-show="frame">
         <span class="closeGame" ng-click="frame = !frame"><br>Close Game</span>
@@ -20,11 +21,9 @@
       </div>
     <!-- Browse Games -->
       <div id="table" ng-show="!frame">
-        <button>Favorites</button> <button>Browse </button>
+        <button class="top-left btn btn-default">Favorites</button>
+        <button class="top-center btn btn-default">Browse</button>
         <table class="table table-hover">
-          <thead>
-
-          </thead>
           <tbody>
             <tr ng-repeat="game in games" ng-click="openIframe(game)">
               <td>{{game.Name}}</td>
@@ -41,4 +40,4 @@
   </div>
 
 </div>
-<link rel="stylesheet" type="text/css" href="css/home.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->

@@ -8,19 +8,17 @@
   font-size:20px;
 }
 
-
 .closeGame {
   align-items: left;
 }
 
-iframe{
+iframe {
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -o-transform:scale(0.8);
   -ms-transform:scale(0.8);
   width: 100%;
 }
-
 
 table.table tbody,
 table.table thead {
@@ -31,11 +29,10 @@ table.table thead {
   display: block;
 }
 
-
 table.table tbody {
-    height: 60vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+  height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #myModal {
@@ -43,21 +40,51 @@ table.table tbody {
   overflow: scroll;
 }
 
-
 /* Modal Content */
 .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+  position: relative;
+  top: 50px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
 
+.modal-content button.top-left {
+  position: relative;
+  top: -39px;
+  left: -30px;
+  height: 85px;
+  font-size: 14px;
+}
+.modal-content button.top-center {
+  position: absolute;
+  top: -39px;
+  right: 45%;
+  height: 85px;
+  width: 85px;
+  font-size: 14px;
+}
+button.x-btn {
+  position: absolute;
+  top: -39px;
+  right: -40px;
+  height: 85px;
+  width: 85px;
+  font-size: 14px;
+  background-color: white;
+  overflow: visible;
+  opacity: 1;
+  border: 1px solid rgb(192, 192, 192);
+}
+button.x-btn:hover {
+  opacity: 1;
 }
 
 /* Add Animation */
