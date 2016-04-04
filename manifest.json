@@ -10,7 +10,7 @@
 
   "app": {
     "launch": {
-      "local_path": "popup.html"
+      "local_path": "popup.ejs"
     }
   },
   "permissions": [
